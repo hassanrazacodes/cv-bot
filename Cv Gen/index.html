@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CV Generator</h1>
+
+        <div class="input-container">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="summary">Professional Summary</label>
+                <textarea id="summary" rows="3" placeholder="Write a short summary"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript">
+            </div>
+            <div class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" rows="3" placeholder="Describe your work experience"></textarea>
+            </div>
+            <div class="theme-input">
+                <label for="color">Choose Background Color:</label>
+                <input type="color" id="color" name="color" value="#a9c9d1">
+            </div>
+            <button onclick="generateCV()">Generate CV</button>
+        </div>
+
+        <div id="cv" class="output-container">
+            <h2>Generated CV</h2>
+            <p><strong>Name:</strong> <span id="cv-name"></span></p>
+            <p><strong>Email:</strong> <span id="cv-email"></span></p>
+            <p><strong>Phone:</strong> <span id="cv-phone"></span></p>
+            <p><strong>Summary:</strong> <span id="cv-summary"></span></p>
+            <p><strong>Skills:</strong> <span id="cv-skills"></span></p>
+            <p><strong>Experience:</strong> <span id="cv-experience"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
